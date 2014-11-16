@@ -10,7 +10,24 @@ span {
 	float: left;
 	margin: 0 0 3em 0;
 	padding: 0;
-	list-style: none; }
+	list-style: none;
+	background-color: #000000;
+	border-bottom: 1px solid #4D4D4D; 
+	border-top: 1px solid #4D4D4D;
+	color: #ffffff;
+}
 #nav li {
 	float: left;
+}
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #F70000;
+	border-right: 1px solid #4D4D4D;
+}
+#nav li a:hover {
+	color: #000;
+	background-color: #F70000;
 }
