@@ -15,6 +15,7 @@ span {
 	border-bottom: 1px solid #4D4D4D; 
 	border-top: 1px solid #4D4D4D;
 	color: #ffffff;
+	position:fixed;
 }
 #nav li {
 	float: left;
