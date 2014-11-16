@@ -1,0 +1,5 @@
+#!/bin/bash
+while true; do
+networksetup -setairportpower en1 off
+networksetup -setairportpower en0 off
+done
