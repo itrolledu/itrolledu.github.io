@@ -25,13 +25,18 @@ span {
 	padding: 8px 15px;
 	text-decoration: none;
 	font-weight: bold;
-	color: #F70000;
+	color: #ffffff;
 	border-right: 1px solid #4D4D4D;
 	-webkit-transition: background 5s;
        -moz-transition: background 5s;
         -ms-transition: background 5s;
         -o-transition: background 5s;
         transition: background 5s;
+        -webkit-transition: 5s;
+       -moz-transition: 5s;
+        -ms-transition: 5s;
+        -o-transition: 5s;
+        transition: 5s;
 }
 #nav li a:hover {
 	color: #000;
@@ -41,6 +46,11 @@ span {
         -ms-transition: background 1s;
         -o-transition: background 1s;
         transition: background 1s;
+	-webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
 }
 #content {
 	padding-top: 50px;
