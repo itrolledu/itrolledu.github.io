@@ -5,6 +5,24 @@ body{
 span {
   font-size: 30px;
 }
+a {
+	color: #D9214F;
+	text-decoration: none;
+	-webkit-transition: 5s;
+       -moz-transition: 5s;
+        -ms-transition: 5s;
+        -o-transition: 5s;
+        transition: 5s;
+}
+a:hover {
+	color: FF0000;
+	text-decoration: underline;
+	-webkit-transition: 1s;
+       -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+}
 #nav {
 	width: 98%;
 	float: left;
@@ -25,7 +43,7 @@ span {
 	padding: 8px 15px;
 	text-decoration: none;
 	font-weight: bold;
-	color: #ffffff;
+	color: #D9214F;
 	border-right: 1px solid #4D4D4D;
 	-webkit-transition: background 5s;
        -moz-transition: background 5s;
@@ -40,7 +58,7 @@ span {
 }
 #nav li a:hover {
 	color: #000;
-	background-color: #F70000;
+	background-color: #D9214F;
 	-webkit-transition: background 1s;
        -moz-transition: background 1s;
         -ms-transition: background 1s;
@@ -59,9 +77,8 @@ code {
 	font-family:"DejaVu Sans Mono",Monaco,Consolas,"Courier New",monospace;
 	padding:2px 4px;
 	font-size:90%;
-	color:#c7254e;
+	color:#D9214F;
 	background-color:#f9f2f4;
 	border-radius:4px;
-	width:100%;
-	height:100%;
+	display: block;
 }
