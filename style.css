@@ -8,8 +8,8 @@ span {
 #nav {
 	width: 100%;
 	float: left;
-	margin: 0 0 3em 0;
-	padding: 10px;
+	margin: 0 5% 0 5%;
+	padding: 5px;
 	list-style: none;
 	background-color: #000000;
 	border-bottom: 1px solid #4D4D4D; 
@@ -31,7 +31,7 @@ span {
        -moz-transition: background 5s;
         -ms-transition: background 5s;
         -o-transition: background 5s;
-        transition: background 1s;
+        transition: background 5s;
 }
 #nav li a:hover {
 	color: #000;
@@ -43,5 +43,5 @@ span {
         transition: background 1s;
 }
 #content {
-	padding-top: 30px;
+	padding-top: 50px;
 }
