@@ -8,20 +8,14 @@ span {
 a {
 	color: #D9214F;
 	text-decoration: none;
-	-webkit-transition: 5s;
-       -moz-transition: 5s;
-        -ms-transition: 5s;
-        -o-transition: 5s;
-        transition: 5s;
+    	-webkit-transition: all 1s ease-in-out;
+    	-moz-transition: all 1s ease-in-out;
+    	-o-transition: all 1s ease-in-out;
+    	transition: all 1s ease-in-out;
 }
 a:hover {
 	color: FF0000;
 	text-decoration: underline;
-	-webkit-transition: 1s;
-       -moz-transition: 1s;
-        -ms-transition: 1s;
-        -o-transition: 1s;
-        transition: 1s;
 }
 #nav {
 	width: 98%;
