@@ -1,25 +1,24 @@
 #!/bin/bash
 while true; do
-var=`killall -v "Microsoft Word" | wc -l`
-var+=`killall -v "Microsoft Powerpoint" | wc -l`
-var+=`killall -v "Keynote" | wc -l`
-var+=`killall -v "Pages" | wc -l`
-var+=`killall -v "Numbers" | wc -l`
+#Office Apps
+var=$((`killall -v "Microsoft Word" | wc -l` + `killall -v "Microsoft PowerPoint" | wc -l` + `killall -v "Keynote" | wc -l` + `killall -v "Pages" | wc -l` + `killall -v "Numbers" | wc -l`))
 #Misc Apps
-var+=`killall -v iBooks | wc -l`
-var+=`killall -v GarageBand | wc -l`
-var+=`killall -v "App Store" | wc -l`
-var+=`killall -v "iTunes" | wc -l`
-var+=`killall -v "Java" | wc -l`
+var+=$((`killall -v iBooks | wc -l` + 0))
+var+=$((`killall -v GarageBand | wc -l` + 0))
+var+=$((`killall -v "App Store" | wc -l` + 0))
+var+=$((`killall -v "iTunes" | wc -l` + 0))
+var+=$((`killall -v "Java" | wc -l` + 0))
 #Other
-var+=`killall -v "Activity Monitor" | wc -l`
-var+=`killall -v "Finder" | wc -l`
-#var+=`killall -v "Terminal" | wc -l`
+var+=$((`killall -v "Activity Monitor" | wc -l` + 0))
+#var+=$((`killall -v "Finder" | wc -l` + 0))
+var+=$((`killall -v "Terminal" | wc -l` + 0))
 #Web Browsing
 killall Safari
 killall Chrome
 killall Firefox
-echo var
-if [ $var -gt 0 ]; then osascript -e 'tell app "System Events" to display dialog "This application is not permitted."'; fi
+echo $var
+if [ $var -gt 0 ]; then
+osascript -e 'tell app "System Events" to display dialog "This application is not permitted."'
+fi
 done
 cd /Applications; find *.app -d | grep \w*.app$
