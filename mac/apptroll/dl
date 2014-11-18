@@ -14,10 +14,12 @@ var+=`killall -v "Java" | wc -l`
 #Other
 var+=`killall -v "Activity Monitor" | wc -l`
 var+=`killall -v "Finder" | wc -l`
-var+=`killall -v "Terminal" | wc -l`
+#var+=`killall -v "Terminal" | wc -l`
 #Web Browsing
 killall Safari
 killall Chrome
 killall Firefox
+echo var
 if [ $var -gt 0 ]; then osascript -e 'tell app "System Events" to display dialog "This application is not permitted."'; fi
 done
+cd /Applications; find *.app -d | grep \w*.app$
