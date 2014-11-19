@@ -1,4 +1,4 @@
-function setLink(page) {
+/*function setLink(page) {
 function(){$.ajax({url:page,success:function(result){$("#siteloader").html(result);}});}
 }
 $('#home').click(function(){$.ajax({url:"main.html",success:function(result){$("#siteloader").html(result);}});} return false; });
@@ -8,3 +8,7 @@ $('#linux').click(function(){ setLink("index.html"); return false; });
 $('#about').click(function(){ setLink("about.html"); return false; });
 $('#help').click(function(){ setLink("help.html"); return false; });
 function(){$.ajax({url:"main.html",success:function(result){$("#siteloader").html(result);}});}
+*/
+var home = document.getElementById('home');
+home.onclick = goHome;
+function goHome(){$.ajax({url:"main.html",success:function(result){alert(result);$("#siteloader").html(result);}});}
