@@ -80,5 +80,5 @@ li {
     list-style-type: none;
 }
 iframe {
-	position: fixed;
+	border: 0;
 }
