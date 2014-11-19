@@ -79,3 +79,6 @@ code {
 li {
     list-style-type: none;
 }
+iframe {
+	position: fixed;
+}
