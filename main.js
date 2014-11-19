@@ -21,7 +21,7 @@ function goHome(){$.ajax({url:"main.html",success:function(result){$("#siteloade
 */
 //Just use iframes...
 function setLink(url) {
-  	$("#siteloader").html('<iframe src="'+url+'" height="100%" width="100%">');
+  	$("#siteloader").html('<iframe src="'+url+'" height="90%" width="100%">');
 }
 $('#home').click(function(){ setLink("http://itrolledu.github.io/main.html"); return false; });
 $('#mac').click(function(){ setLink("http://itrolledu.github.io/mac/index.html"); return false; });
