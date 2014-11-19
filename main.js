@@ -11,4 +11,10 @@ function(){$.ajax({url:"main.html",success:function(result){$("#siteloader").htm
 */
 var home = document.getElementById('home');
 home.onclick = goHome;
-function goHome(){$.ajax({url:"main.html",success:function(result){alert(result);$("#siteloader").html(result);}});}
+/*
+function(){
+  $.ajax({url:"main.js",success:function(result){
+    $("#content").html(result);
+  }});
+};*/
+function goHome(){$.ajax({url:"main.html",success:function(result){alert(result);$("#siteloader").html(result);}});};
