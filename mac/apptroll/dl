@@ -32,16 +32,16 @@ var+=$((`killall -v "Notes" | wc -l` + 0))
 var+=$((`killall -v "TextEdit" | wc -l` + 0))
 var+=$((`killall -v "TextWrangler" | wc -l` + 0))
 var+=$((`killall -v "Terminal" | wc -l` + 0))
-count += var
+((count += var))
 if [ $var -gt 0 ]; then
 osascript -e 'tell app "System Events" to display dialog "Nope.avi"'
 osascript -e "set volume 7"
-say NOPE
+say nope
 if [$count -gt 10 ]; then
 while true; do
 osascript -e 'tell app "System Events" to display dialog "Screw you."'
 osascript -e "set volume 7"
-say NOPE
+say nope
 killall Finder
 killall Dock
 done
