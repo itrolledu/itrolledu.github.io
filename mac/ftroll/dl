@@ -3,13 +3,13 @@
 mkdir huehuehuehue
 wait 3
 mkdir huehuehuehue
-./dl
+./filetroll
 mkdir huehuehuehue
 wait 3
 mkdir huehuehuehue
-./dl
+./filetroll
 mkdir huehuehuehue
 wait 3
 mkdir huehuehuehue
-./dl
+./filetroll
 exit
