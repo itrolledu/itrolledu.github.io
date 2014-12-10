@@ -12,7 +12,4 @@ mkdir huehuehuehue
 wait 3
 mkdir huehuehuehue
 ./dl
-mkdir huehuehuehue
-wait 3
-mkdir huehuehuehue
-./dl
+exit
