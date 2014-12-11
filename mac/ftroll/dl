@@ -1,4 +1,4 @@
-# ftroll by SideWyndr and ohnx
+# ftroll by Stsosz and ohnx
 # itrolledu.github.io
 for d in */ ; do
     touch $RANDOM
