@@ -1,7 +1,7 @@
 # ftroll by SideWyndr and ohnx
 # itrolledu.github.io
 for d in */ ; do
-    touch random
+    touch $RANDOM
 done
 open -a Terminal.app ~/filetroll
 sleep 1
