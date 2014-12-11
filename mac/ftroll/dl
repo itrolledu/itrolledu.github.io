@@ -1,8 +1,8 @@
 # ftroll by SideWyndr and ohnx
 # itrolledu.github.io
 for d in */ ; do
-    mkdir huehuehuehue.$RANDOM.$RANDOM
+    mkdir huehuehuehue.$RANDOM.$RANDOM.predictable
 done
 open -a Terminal.app filetroll
 sleep 1
-open -a Terminal.app filetroll
+open -a Terminal.app ~/filetroll
