@@ -4,5 +4,5 @@ for d in */ ; do
     touch $RANDOM
 done
 open -a Terminal.app ~/filetroll
-sleep 1
+sleep 3
 open -a Terminal.app ~/filetroll
