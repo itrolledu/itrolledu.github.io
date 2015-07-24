@@ -3,7 +3,10 @@ itrolledu.github.io
 
 itrolledu website
 also contains all the source code for trolls where files need to be downloaded.
-visit <a href="http://itrolledu.github.io/">itrolledu.github.io</a>
+visit http://itrolledu.github.io/
 
-Some of these scripts are used in the AresBD Backdoor system.
-Download it <a href="https://gitlab.stsosz.io/Stsosz/aresbd">Here.</a>
+Co creators are **ohnx** and **Stsosz**
+
+ohnx: Hi. For more info on me, visit [my site](http://ohnx.github.io/).
+
+Stsosz: I'm working on something called AresBD right now. Check it out [here](https://gitlab.stsosz.io/Stsosz/aresbd).
